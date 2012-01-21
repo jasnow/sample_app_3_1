@@ -1,6 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'rails'
+gem 'rake', '~> 0.9.0'
+
+gem 'rails', '3.1.3'
+
+#gem 'rack', '1.3.3'
+gem 'rack'
 
 gem 'gravatar_image_tag'
 
@@ -13,9 +18,11 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
+gem 'nokogiri', '1.5.0'
+
 group :development, :test do
-  gem 'sqlite3'
-  gem 'sqlite3-ruby'
+  #gem 'sqlite3'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
 group :development do
@@ -27,7 +34,8 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'webrat'
-  gem 'spork'
+  gem 'spork', '~> 0.9.0.rc'
+  gem 'factory_girl', "~> 2.0.5"
   gem 'factory_girl_rails'
 
   # Pretty printed test output
