@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rake', '~> 0.9.0'
 
-gem 'rails', '3.1.3'
+gem 'rails', '3.1.4'
 
 #gem 'rack', '1.3.3'
 gem 'rack'
