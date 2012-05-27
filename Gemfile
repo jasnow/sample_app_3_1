@@ -21,8 +21,7 @@ gem 'jquery-rails'
 gem 'nokogiri', '1.5.0'
 
 group :development, :test do
-  #gem 'sqlite3'
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'mysql2'
 end
 
 group :development do
