@@ -2,7 +2,8 @@ source 'http://rubygems.org'
 
 gem 'rake', '~> 0.9.0'
 
-gem 'rails', '3.1.4'
+#gem 'rails', '3.1.4'
+gem 'rails', '3.1.5.rc1'
 
 #gem 'rack', '1.3.3'
 gem 'rack'
@@ -21,7 +22,7 @@ gem 'jquery-rails'
 gem 'nokogiri', '1.5.0'
 
 group :development, :test do
-  gem 'mysql2'
+  gem 'pg'
 end
 
 group :development do
