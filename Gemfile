@@ -1,10 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rake', '~> 0.9.0'
+gem 'rake'
 
-gem 'rails', '3.1.6'
+gem 'rails', '3.1.11'
 
-#gem 'rack', '1.3.3'
 gem 'rack'
 
 gem 'gravatar_image_tag'
@@ -18,7 +17,7 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
-gem 'nokogiri', '1.5.0'
+gem 'nokogiri', '~> 1.5.6'
 
 group :development, :test do
   gem 'pg'
@@ -34,7 +33,6 @@ group :test do
   gem 'rspec-rails'
   gem 'webrat'
   gem 'spork', '~> 0.9.0.rc'
-  gem 'factory_girl', "~> 2.0.5"
   gem 'factory_girl_rails'
 
   # Pretty printed test output
