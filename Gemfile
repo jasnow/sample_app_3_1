@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 #gem 'rake'
 
-gem 'rails', '3.1.11'
+gem 'rails', '3.1.12'
 
 gem 'rack'
 
@@ -17,7 +17,7 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
-gem 'nokogiri', '~> 1.5.6'
+gem 'nokogiri'
 
 group :development, :test do
   gem 'pg'
@@ -32,7 +32,7 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'webrat'
-  gem 'spork', '~> 0.9.0.rc'
+  gem 'spork'
   gem 'factory_girl_rails'
 
   # Pretty printed test output
