@@ -1,2 +1,0 @@
-#rvm --default use ruby-2.0.0-preview1@sp31 --create
-rvm --default use ruby-1.9.3-p392@sp31 --create
