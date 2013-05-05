@@ -7,6 +7,9 @@ Spork.prefork do
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
+  require 'database_cleaner'
+
+  DatabaseCleaner.strategy = :truncation
 
   # Requires supporting files with custom matchers and macros, etc,
   # in ./support/ and its subdirectories.
@@ -36,4 +39,6 @@ Spork.prefork do
 end
 
 Spork.each_run do
+  DatabaseCleaner.clean
 end
+
