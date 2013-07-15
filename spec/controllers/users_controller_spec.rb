@@ -10,7 +10,8 @@ describe UsersController do
 
     # Exercise 11.5.4:
     it "should paginate microposts" do
-      35.times { FactoryGirl.create(:micropost, :user => @user, :content => "foo") }
+      35.times { FactoryGirl.create(:micropost, :user => @user,
+        :content => "foo") }
       FactoryGirl.create(:micropost, :user => @user, :content => "a" * 55)
       get :show, :id => @user
       response.should have_selector('div.pagination')
@@ -58,11 +59,13 @@ describe UsersController do
     end
     it "should have a password field" do
       get :new
-      response.should have_selector("input[name='user[password]'][type='password']")
+      response.should have_selector(
+        "input[name='user[password]'][type='password']")
     end
     it "should have a password confirmation field" do
       get :new
-      response.should have_selector("input[name='user[password_confirmation]'][type='password']")
+      response.should have_selector(
+        "input[name='user[password_confirmation]'][type='password']")
     end
   end
 
@@ -138,7 +141,8 @@ describe UsersController do
     it "should have a link to change the Gravatar" do
       get :edit, :id => @user
       gravatar_url = "http://gravatar.com/emails"
-      response.should have_selector("a", :href => gravatar_url, :content => "change")
+      response.should have_selector("a", :href => gravatar_url,
+        :content => "change")
     end
 
   end # get/edit
@@ -245,7 +249,8 @@ describe UsersController do
         third  = FactoryGirl.create(:user, :email => "another@example.net")
         @users = [@user, @second, third]
         30.times do
-          @users << FactoryGirl.create(:user, :email => FactoryGirl.generate(:email))
+          @users << FactoryGirl.create(:user,
+            :email => FactoryGirl.generate(:email))
         end
       end
 
@@ -278,20 +283,25 @@ describe UsersController do
 
       # Exercise 11.5..2:
       it "should display the micropost count" do
-        10.times { FactoryGirl.create(:micropost, :user => @user, :content => "foo") }
+        10.times { FactoryGirl.create(:micropost, :user => @user,
+          :content => "foo") }
         get :show, :id => @user
-        response.should have_selector('td.sidebar', :content => @user.microposts.count.to_s)
+        response.should have_selector('td.sidebar',
+          :content => @user.microposts.count.to_s)
       end
 
       # Next two tests are for Chapter 10 (Exercise 4).
       it "should not see delete links if not admin" do
         get :index
-        response.should_not have_selector("a", :href => "/users/2", :content => "delete")
+        response.should_not have_selector("a", :href => "/users/2",
+          :content => "delete")
       end
 
       it "should show the user's microposts" do
-        mp1 = FactoryGirl.create(:micropost, :user => @user, :content => "Foo bar")
-        mp2 = FactoryGirl.create(:micropost, :user => @user, :content => "Baz guux")
+        mp1 = FactoryGirl.create(:micropost, :user => @user,
+          :content => "Foo bar")
+        mp2 = FactoryGirl.create(:micropost, :user => @user,
+          :content => "Baz guux")
         get :show, :id => @user
         response.should have_selector("span.content", :content => mp1.content)
         response.should have_selector("span.content", :content => mp2.content)
@@ -299,15 +309,21 @@ describe UsersController do
 
       # Exercise 11.5.6:
       it "should not see micropost delete links of other people's microposts" do
-        mp3 = FactoryGirl.create(:micropost, :user => @second, :content => "Foo bar")
-        mp4 = FactoryGirl.create(:micropost, :user => @second, :content => "Baz guux")
+        mp3 = FactoryGirl.create(:micropost, :user => @second,
+          :content => "Foo bar")
+        mp4 = FactoryGirl.create(:micropost, :user => @second,
+          :content => "Baz guux")
         get :show, :id => @user
-        response.should_not have_selector("span.content", :content => mp3.content)
-        response.should_not have_selector("span.content", :content => mp4.content)
+        response.should_not have_selector("span.content",
+          :content => mp3.content)
+        response.should_not have_selector("span.content",
+          :content => mp4.content)
 
         get :show, :id => @second
-        response.should have_selector("span.content", :content => mp3.content)
-        response.should have_selector("span.content", :content => mp4.content)
+        response.should have_selector("span.content",
+          :content => mp3.content)
+        response.should have_selector("span.content",
+          :content => mp4.content)
       end
     end
   end
@@ -334,7 +350,8 @@ describe UsersController do
 
     describe "as an admin user" do
       before(:each) do
-        @admin = FactoryGirl.create(:user, :email => "admin@example.com", :admin => true)
+        @admin = FactoryGirl.create(:user,
+          :email => "admin@example.com", :admin => true)
         test_sign_in(@admin)
       end
 
@@ -375,7 +392,8 @@ describe UsersController do
     describe "when signed in" do
       before(:each) do
         @user = test_sign_in(FactoryGirl.create(:user))
-        @other_user = FactoryGirl.create(:user, :email => FactoryGirl.generate(:email))
+        @other_user = FactoryGirl.create(:user,
+          :email => FactoryGirl.generate(:email))
         @user.follow!(@other_user)
       end
 
