@@ -29,7 +29,7 @@ GEM
       activesupport (= 3.1.12)
     activesupport (3.1.12)
       multi_json (~> 1.0)
-    annotate (2.6.0)
+    annotate (2.6.1)
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     ansi (1.4.3)
