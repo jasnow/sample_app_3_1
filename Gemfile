@@ -23,15 +23,17 @@ group :development, :test do
   gem 'pg'
 end
 
-group :development do
+group :development, :test do
   gem 'rspec-rails'
+end
+
+group :development do
   gem 'annotate'
   gem 'faker'
 end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec-rails'
   gem 'webrat'
   gem 'spork'
   gem 'factory_girl_rails'
