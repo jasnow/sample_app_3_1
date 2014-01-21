@@ -30,6 +30,8 @@ end
 group :development do
   gem 'annotate'
   gem 'faker'
+
+  gem 'codesake-dawn', :require => false
 end
 
 group :test do
