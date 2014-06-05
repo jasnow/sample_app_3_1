@@ -5,7 +5,6 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.12'
 
 gem 'rack'
-gem 'rack-ssl', '1.3.4'
 
 gem 'gravatar_image_tag'
 
