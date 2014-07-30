@@ -233,7 +233,7 @@ DEPENDENCIES
   pg
   rack
   rails (= 3.1.12)
-  rspec-rails (= 2.99.0)
+  rspec-rails
   sass-rails
   spork
   turn
