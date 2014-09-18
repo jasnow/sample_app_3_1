@@ -31,7 +31,7 @@ group :development do
   gem 'annotate'
   gem 'faker'
 
-  gem 'codesake-dawn', :require => false
+  gem 'dawn', :require => false
 end
 
 group :test do
