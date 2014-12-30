@@ -17,11 +17,12 @@ gem 'jquery-rails'
 
 gem 'nokogiri'
 
-group :development, :test do
+group :production do
   gem 'pg'
 end
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails', '2.99.0'
 end
 
