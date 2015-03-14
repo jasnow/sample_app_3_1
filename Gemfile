@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.1.12'
+gem 'ffi', '1.9.6'
 
 gem 'rack'
 
