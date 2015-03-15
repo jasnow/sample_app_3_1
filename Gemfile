@@ -1,37 +1,26 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.1.12'
-gem 'ffi', '1.9.6'
 
 gem 'rack'
-
 gem 'gravatar_image_tag'
-
 gem 'will_paginate'
-
-# Asset template engines
 gem 'sass-rails'
 gem 'coffee-script'
 gem 'uglifier'
-
 gem 'jquery-rails'
-
 gem 'nokogiri'
-
-group :production do
-  gem 'pg'
-end
-
-group :development, :test do
-  gem 'sqlite3'
-  gem 'rspec-rails', '2.99.0'
-end
 
 group :development do
   gem 'annotate'
   gem 'faker'
 
   gem 'dawnscanner', :require => false
+end
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails', '2.99.0'
 end
 
 group :test do
@@ -42,4 +31,8 @@ group :test do
 
   # Pretty printed test output
   gem 'turn', :require => false
+end
+
+group :production do
+  gem 'pg'
 end
