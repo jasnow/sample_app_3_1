@@ -10,12 +10,13 @@ gem 'coffee-script'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'nokogiri'
+gem 'overcommit'
 
 group :development do
   gem 'annotate'
   gem 'faker'
 
-  gem 'dawnscanner', :require => false
+  gem 'dawnscanner', require: false
 end
 
 group :development, :test do
@@ -30,7 +31,7 @@ group :test do
   gem 'factory_girl_rails'
 
   # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'turn', require: false
 end
 
 group :production do
