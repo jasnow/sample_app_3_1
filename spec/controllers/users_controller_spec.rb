@@ -332,7 +332,7 @@ describe UsersController, :type => :controller do
     end
   end
 
-  describe "DELETE 'destory'" do
+  describe "DELETE 'destroy'" do
     before(:each) do
       @user = FactoryGirl.create(:user)
     end
