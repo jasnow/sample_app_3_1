@@ -44,7 +44,7 @@ GEM
     coffee-script-source (1.9.1.1)
     cvss (0.99.0)
     database_cleaner (1.5.0)
-    dawnscanner (1.4.0)
+    dawnscanner (1.4.2)
       cvss
       grit
       haml
