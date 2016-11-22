@@ -4,7 +4,7 @@ gem 'rails', '3.1.12'
 
 gem 'rack'
 gem 'gravatar_image_tag'
-gem 'will_paginate'
+gem 'will_paginate', '3.1.0' # LOCKED DOWN
 gem 'sass-rails'
 gem 'coffee-script'
 gem 'uglifier'

@@ -259,7 +259,7 @@ DEPENDENCIES
   turn
   uglifier
   webrat
-  will_paginate
+  will_paginate (= 3.1.0)
 
 BUNDLED WITH
-   1.13.5
+   1.13.6
