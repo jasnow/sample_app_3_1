@@ -22,7 +22,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.99.0'
-  gem 'test-unit' # IF YOU USE RUBY 2.2.2
+  gem 'test-unit'
 end
 
 group :test do
