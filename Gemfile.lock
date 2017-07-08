@@ -125,7 +125,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     hike (1.2.3)
-    i18n (0.8.4)
+    i18n (0.8.5)
     iniparse (1.4.4)
     jquery-rails (3.1.4)
       railties (>= 3.0, < 5.0)
@@ -196,7 +196,7 @@ GEM
       rspec-mocks (~> 2.99.0)
     ruby_parser (3.9.0)
       sexp_processor (~> 4.1)
-    sass (3.4.24)
+    sass (3.4.25)
     sass-rails (3.1.7)
       actionpack (~> 3.1.0)
       railties (~> 3.1.0)
