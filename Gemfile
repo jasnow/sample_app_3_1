@@ -29,7 +29,7 @@ group :test do
   gem 'database_cleaner'
   gem 'webrat'
   gem 'spork'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
 
   # Pretty printed test output
   gem 'turn', require: false
