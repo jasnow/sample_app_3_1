@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.1.12'
 
-gem 'rack'
 gem 'gravatar_image_tag'
 gem 'will_paginate'
 gem 'sass-rails'
