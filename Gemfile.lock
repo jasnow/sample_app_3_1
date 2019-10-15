@@ -88,7 +88,7 @@ GEM
     mime-types (1.25.1)
     mini_portile2 (2.4.0)
     minitest (4.7.5)
-    multi_json (1.14.0)
+    multi_json (1.14.1)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     overcommit (0.47.0)
@@ -147,7 +147,7 @@ GEM
       rspec-core (~> 2.99.0)
       rspec-expectations (~> 2.99.0)
       rspec-mocks (~> 2.99.0)
-    rubocop (0.75.0)
+    rubocop (0.75.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.6)
@@ -199,7 +199,7 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
-    will_paginate (3.2.0)
+    will_paginate (3.2.1)
 
 PLATFORMS
   ruby
